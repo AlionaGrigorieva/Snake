@@ -38,7 +38,8 @@ namespace Snake {
 	private: System::Windows::Forms::ToolStripMenuItem^ exitToolStripMenuItem;
 	private: System::Windows::Forms::GroupBox^ groupBoxData;
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::TextBox^ textBoxScore;
+
 
 
 
@@ -86,7 +87,7 @@ namespace Snake {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->textBoxPosition = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxScore = (gcnew System::Windows::Forms::TextBox());
 			this->pictureBoxUpperLimit = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxBottomLimit = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxLeftLimit = (gcnew System::Windows::Forms::PictureBox());
@@ -176,7 +177,7 @@ namespace Snake {
 			this->groupBoxData->Controls->Add(this->label3);
 			this->groupBoxData->Controls->Add(this->textBoxPosition);
 			this->groupBoxData->Controls->Add(this->label1);
-			this->groupBoxData->Controls->Add(this->textBox1);
+			this->groupBoxData->Controls->Add(this->textBoxScore);
 			this->groupBoxData->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->groupBoxData->Location = System::Drawing::Point(13, 43);
@@ -228,19 +229,19 @@ namespace Snake {
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"SCORE:";
 			// 
-			// textBox1
+			// textBoxScore
 			// 
-			this->textBox1->Enabled = false;
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->textBoxScore->Enabled = false;
+			this->textBoxScore->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox1->Location = System::Drawing::Point(71, 32);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->ReadOnly = true;
-			this->textBox1->Size = System::Drawing::Size(61, 29);
-			this->textBox1->TabIndex = 0;
-			this->textBox1->Text = L"0";
-			this->textBox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->textBoxScore->Location = System::Drawing::Point(71, 32);
+			this->textBoxScore->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->textBoxScore->Name = L"textBoxScore";
+			this->textBoxScore->ReadOnly = true;
+			this->textBoxScore->Size = System::Drawing::Size(61, 29);
+			this->textBoxScore->TabIndex = 0;
+			this->textBoxScore->Text = L"0";
+			this->textBoxScore->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// pictureBoxUpperLimit
 			// 
